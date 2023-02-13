@@ -7,7 +7,7 @@ let db = new sqlite3.Database('todo.db', (err) => {
         throw err;
     }
     else {
-         console.log('Connect to db ...');
+         console.log('Connected to db ...');
          db.run(`CREATE TABLE todos (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT)`,
